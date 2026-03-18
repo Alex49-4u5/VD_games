@@ -14,6 +14,19 @@ dependencies = [
 
 [project.scripts]
 VD_games = "VD_games.scripts.VD_games:main"
+VD-even = "VD_games.scripts.VD_even:main"
 
 [tool.uv]
 package = true
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.6",
+]
+[tool.ruff]
+line-length = 79
+extend-select = [
+    "W291",  # trailing whitespace
+    "W293",  # blank line contains whitespace
+    "E501",  # line too long
+]
