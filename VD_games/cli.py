@@ -1,0 +1,11 @@
+"""Приколы для приветсвия."""
+import prompt
+
+def welcome_user():
+    """Приветсвие"""
+    print("Welcome to the VD-games!")
+    name = prompt.string('May I have your name? ')
+    print(f"Hello, {name}!")
+
+if __name__ == "__main__":
+    welcome_user()

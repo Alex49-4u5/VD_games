@@ -8,10 +8,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "prompt>=0.4.1",
+]
 
 [project.scripts]
-vd-main = "VD_games.scripts.VD_main:main"
+VD_games = "VD_games.scripts.VD_games:main"
 
 [tool.uv]
 package = true
